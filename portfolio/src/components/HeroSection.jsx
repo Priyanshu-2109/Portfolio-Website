@@ -4,7 +4,7 @@ import emoji from '../images/emojiimage.png';
 
 const HeroSection = () => {
   return (
-    <section className="pb-35">
+    <section className="pb-25">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
         {/* Left Section */}
         <div className="col-span-7 text-center sm:text-left">
