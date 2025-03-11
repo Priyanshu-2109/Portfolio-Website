@@ -3,6 +3,8 @@ import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar';
 import AboutSection from '../components/AboutSection';
 import AchievementsSection from '../components/AchievementsSection';
+import ProjectsSection from '../components/ProjectsSection';
+import EducationSection from '../components/EducationSection';
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <HeroSection />
       <AchievementsSection />
       <AboutSection />
+      <EducationSection />
+      <ProjectsSection />
     </div>
   </main>
   )
