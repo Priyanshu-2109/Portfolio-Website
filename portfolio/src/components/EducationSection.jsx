@@ -41,7 +41,7 @@ const EducationTimeline = () => {
 
   return (
     <div className="py-12 bg-gray-100 dark:bg-[#121212]">
-      <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-10">
+      <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10">
         Education
       </h2>
 
@@ -54,20 +54,20 @@ const EducationTimeline = () => {
             }`}
           >
             {/* Timeline Dot (Centered) */}
-            <div className="absolute -left-9 top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg border-4 border-white dark:border-[#121212]"></div>
+            <div className="absolute -left-9 top-1/2 transform -translate-y-1/2 w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg border-4 border-white dark:border-[#121212]"></div>
 
             {/* Card Content */}
-            <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg w-full flex items-center justify-between">
+            <div className="bg-[#1a1a1a] p-5 rounded-lg shadow-lg w-full flex items-center justify-between">
               
               {/* Details of card */}
               <div>
-                <p className="text-gray-400 text-lg font-semibold">{edu.institution}</p>
-                <h3 className="text-xl font-bold text-white mt-2">{edu.title}</h3>
-                <p className="text-gray-300 mt-1">{edu.grade}</p>
+                <p className="text-gray-400 text-sm font-medium">{edu.institution}</p>
+                <h3 className="text-lg font-semibold text-white mt-1">{edu.title}</h3>
+                <p className="text-gray-300 text-sm mt-1">{edu.grade}</p>
               </div>
 
-              {/* Right: Duration of education*/}
-              <span className="px-4 py-1 text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full">
+              {/* Right: Duration of education */}
+              <span className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full">
                 {edu.duration}
               </span>
             </div>

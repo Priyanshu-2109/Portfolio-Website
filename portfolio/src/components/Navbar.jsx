@@ -5,16 +5,23 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 30) {
-        setHasShadow(true);
-      } else {
-        setHasShadow(false);
-      }
+      setHasShadow(window.scrollY > 30);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Smooth Scroll Function
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 45, // Adjust for navbar height
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <nav
@@ -24,9 +31,24 @@ const Navbar = () => {
     >
       <h1 className="text-3xl font-extrabold tracking-wide text-white">LOGO</h1>
       <div className="space-x-8 text-lg">
-        <button className="hover:text-gray-300 transition duration-300 text-white">About</button>
-        <button className="hover:text-gray-300 transition duration-300 text-white">Projects</button>
-        <button className="hover:text-gray-300 transition duration-300 text-white ">Contact</button>
+        <button
+          onClick={() => scrollToSection("about")}
+          className="hover:text-gray-300 transition duration-300 text-white"
+        >
+          About
+        </button>
+        <button
+          onClick={() => scrollToSection("projects")}
+          className="hover:text-gray-300 transition duration-300 text-white"
+        >
+          Projects
+        </button>
+        <button
+          onClick={() => scrollToSection("contact")}
+          className="hover:text-gray-300 transition duration-300 text-white"
+        >
+          Contact
+        </button>
       </div>
     </nav>
   );

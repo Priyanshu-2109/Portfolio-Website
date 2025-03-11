@@ -8,8 +8,12 @@ export default defineConfig({
   content: [
     "./src/**/*.{js,cjs,mjs,ts,cts,mts}",
   ]
+  
 ,
   plugins: [react(),
     tailwindcss(),
   ],
 })
+
+
+

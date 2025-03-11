@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { projects } from '../assets/asset.js';
 
-// const projects = [
-    
-// ];
 
 const ProjectSection = () => {
     return (
