@@ -21,7 +21,7 @@ const educationData = [
   },
 ];
 
-const EducationTimeline = () => {
+const EducationSection = () => {
   const [visibleIndex, setVisibleIndex] = useState(-1);
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const EducationTimeline = () => {
               </div>
 
               {/* Right: Duration of education */}
-              <span className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full">
+              <span className="px-4 py-2 text-xs sm:text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full">
                 {edu.duration}
               </span>
             </div>
@@ -78,4 +78,4 @@ const EducationTimeline = () => {
   );
 };
 
-export default EducationTimeline;
+export default EducationSection;

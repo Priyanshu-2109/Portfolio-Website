@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import aboutImage from "../images/about-image.webp";
+import { assets } from "../assets/asset";
 import TabButton from "../components/TabButton";
 
 const TAB_DATA = [
@@ -50,7 +50,7 @@ const AboutSection = () => {
           transition={{ duration: 0.5 }}
           className="lg:w-2/5 w-full"
         >
-          <img src={aboutImage} className="rounded-lg shadow-lg w-full h-auto" alt="About" />
+          <img src={assets.aboutimg} className="rounded-lg shadow-lg w-full h-auto" alt="About" />
         </motion.div>
 
         {/* Right Side - Content */}
@@ -63,8 +63,8 @@ const AboutSection = () => {
         >
           <h1 className="text-4xl font-bold mb-4">About Me</h1>
           <p className="text-gray-300 text-base">
-            I am a passionate full-stack web developer with experience in JavaScript, React, Node.js, 
-            Express, MongoDB, and Git. I love building interactive and efficient web applications.
+          A passionate 2nd-year Computer Science and Engineering student skilled in MERN stack development. With a strong foundation in programming languages, web development
+          frameworks, and innovative problem-solving skills.
           </p>
 
           {/* Skills Section */}
