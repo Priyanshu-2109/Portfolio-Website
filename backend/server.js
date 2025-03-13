@@ -13,6 +13,6 @@ app.use(express.json());
 // Ensure "/api/email" route is used
 app.use("/api/email", emailRoute);
 
-app.listen(PORT, () => {
+app.listen(PORT,"0.0.0.0", () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
