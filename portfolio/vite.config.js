@@ -19,7 +19,9 @@ export default defineConfig({
     minify: false, // Disable minification to debug
     sourcemap: true, // Enable source maps for better debugging
   },
-
+  optimizeDeps: {
+    include: ["@emotion/react", "@emotion/styled", "framer-motion"],
+  },
   manualChunks: {
 		lodash: ['lodash']
 	},
