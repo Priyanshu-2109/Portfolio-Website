@@ -5,14 +5,14 @@ import emailRoute from "./routes/email.js";
 
 dotenv.config();
 const app = express();
-// const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
 
-//Ensure "/api/email" route is used
+// Ensure "/api/email" route is used
 app.use("/api/email", emailRoute);
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running on:${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}`);
 });

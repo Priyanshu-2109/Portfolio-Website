@@ -19,7 +19,9 @@ const ContactSection = () => {
     };
 
     try {
-      const response = await fetch("https://portfolio-website-backend-ct3d.onrender.com", { 
+      //use local port to run it locally
+      // const response = await fetch("http://localhost:5000/api/email", {
+      const response = await fetch("https://portfolio-website-backend-ct3d.onrender.com/api/email", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
