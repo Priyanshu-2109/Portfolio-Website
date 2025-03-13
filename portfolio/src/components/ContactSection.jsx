@@ -19,7 +19,7 @@ const ContactSection = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/email", { 
+      const response = await fetch("https://portfolio-website-backend-ct3d.onrender.com", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -61,7 +61,7 @@ const ContactSection = () => {
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
           </p>
 
-          {/* Social Media Links */}
+          {/* Social Media Links */} 
           <div className="flex space-x-4 mt-3">
             <a href="https://github.com/Priyanshu-2109" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-gray-300 transition"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/priyanshu-chaniyara/" target="_blank" rel="noopener noreferrer" className="text-white text-xl hover:text-gray-300 transition"><FaLinkedin /></a>
