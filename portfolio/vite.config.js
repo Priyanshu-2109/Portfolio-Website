@@ -14,9 +14,13 @@ export default defineConfig({
     tailwindcss(),
   ],
 
-  build: {
-    chunkSizeWarningLimit: 1000,
-  },
+  // build: {
+  //   chunkSizeWarningLimit: 1000,
+  // },
+
+  manualChunks: {
+		lodash: ['lodash']
+	},
 
   base: "/",
 })
