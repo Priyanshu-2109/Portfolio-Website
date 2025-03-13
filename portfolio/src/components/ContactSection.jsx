@@ -25,7 +25,7 @@ const ContactSection = () => {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
+      if (response.ok) { 
         toast.success("Email Sent Successfully!", {
           position: "top-right",
           autoClose: 2500,
