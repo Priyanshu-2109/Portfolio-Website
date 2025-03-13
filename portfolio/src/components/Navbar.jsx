@@ -33,19 +33,27 @@ const Navbar = () => {
     >
       {/* Logo */}
       <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide text-white">
-      <img src={assets.logo} alt="PRIYANSHU"
-        className="h-8 sm:h-9 w-[100%]"
+        <img src={assets.logo} alt="PRIYANSHU"
+          className="h-8 sm:h-9 w-[100%]"
         />
       </h1>
 
       {/* Desktop Menu */}
-      <div className="hidden lg:flex space-x-8 text-lg">
+      <div className="hidden lg:flex space-x-8 text-l">
         <button
           onClick={() => scrollToSection("about")}
           className="hover:text-gray-300 transition duration-300 text-white"
         >
           About
         </button>
+        
+        <button
+          onClick={() => scrollToSection("education")}
+          className="hover:text-gray-300 transition duration-300 text-white"
+        >
+          Education
+        </button>
+
         <button
           onClick={() => scrollToSection("projects")}
           className="hover:text-gray-300 transition duration-300 text-white"
@@ -70,7 +78,7 @@ const Navbar = () => {
 
       {/* Mobile Menu (Sidebar) */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-transperent backdrop-blur-md flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-3/4 bg-transparent backdrop-blur-md flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         } lg:hidden`}
       >
@@ -88,12 +96,21 @@ const Navbar = () => {
         >
           About
         </button>
+
+        <button
+          onClick={() => scrollToSection("education")}
+          className="py-3 text-xl text-white font-semibold tracking-wide hover:text-gray-300 transition-all duration-300"
+        >
+          Education
+        </button>
+
         <button
           onClick={() => scrollToSection("projects")}
           className="py-3 text-xl text-white font-semibold tracking-wide hover:text-gray-300 transition-all duration-300"
         >
           Projects
         </button>
+        
         <button
           onClick={() => scrollToSection("contact")}
           className="py-3 text-xl text-white font-semibold tracking-wide hover:text-gray-300 transition-all duration-300"

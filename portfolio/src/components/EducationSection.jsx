@@ -17,7 +17,7 @@ const educationData = [
     title: "Secondary - X (GSEB)",
     institution: "Shree Swami Vivekanand Vidhyalaya - 2, Vadodara, Gujarat",
     duration: "2020 - 2021",
-    grade: "Percentage: 95.00%",
+    grade: "Percentage: 92.34%",
   },
 ];
 
@@ -40,7 +40,7 @@ const EducationSection = () => {
   }, []);
 
   return (
-    <div className="py-12 bg-gray-100 dark:bg-[#121212]">
+    <div id="education" className="py-12 bg-gray-100 dark:bg-[#121212]">
       <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10">
         Education
       </h2>

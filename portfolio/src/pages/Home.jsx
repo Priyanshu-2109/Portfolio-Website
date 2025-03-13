@@ -7,6 +7,8 @@ import ProjectsSection from '../components/ProjectsSection';
 import EducationSection from '../components/EducationSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+// import SplashCursor from './SplashCursor'
+
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
       <ProjectsSection />
       <ContactSection />
       <Footer />
+      {/* <SplashCursor /> */}
     </div>
   </main>
   )

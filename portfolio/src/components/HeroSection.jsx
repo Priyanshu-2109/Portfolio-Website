@@ -3,7 +3,6 @@ import { TypeAnimation } from "react-type-animation";
 import GradientText from "./GradientText";
 import { assets } from "../assets/asset";
 
-
 const HeroSection = () => {
   const handleHireMeClick = () => {
     const contactSection = document.getElementById("contact");
@@ -15,7 +14,6 @@ const HeroSection = () => {
   return (
     <section className="pb-16 relative overflow-hidden mt-5">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 sm:gap-8 items-center max-w-7xl mx-auto px-4 sm:px-6">
-        
         {/* Left Section */}
         <div className="col-span-12 sm:col-span-7 text-center sm:text-left">
           {/* Animated Gradient Text for "Hello, I'm" */}
@@ -47,7 +45,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-[#ADB7BE] text-base sm:text-lg mt-4 leading-relaxed">
-            I am a passionate web developer, dedicated to crafting interactive and efficient web applications.
+            I am a passionate web developer, dedicated to crafting interactive
+            and efficient web applications.
           </p>
 
           {/* Buttons */}
@@ -59,7 +58,17 @@ const HeroSection = () => {
               Hire Me
             </button>
 
-            <button className="px-5 py-2 sm:px-6 sm:py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border shadow-md transform hover:scale-105 font-semibold transition duration-300">
+            <button
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/Priyanshu_Resume.pdf"; // Ensure this file is inside the public folder
+                link.download = "Priyanshu_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="px-5 py-2 sm:px-6 sm:py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border shadow-md transform hover:scale-105 font-semibold transition duration-300"
+            >
               Download Resume
             </button>
           </div>
@@ -71,7 +80,7 @@ const HeroSection = () => {
             <img
               src={assets.profile}
               alt="Hero Image"
-              className="w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] lg:w-[340px] lg:h-[340px] rounded-full object-cover"
+              className="w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] lg:w-[345px] lg:h-[345px] rounded-full object-cover"
             />
           </div>
         </div>

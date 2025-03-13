@@ -39,7 +39,7 @@ const AboutSection = () => {
   const [tab, setTab] = useState("hardskills");
 
   return (
-    <section id="about" className="text-white py-16 px-6 sm:px-12 pt-25">
+    <section id="about" className="text-white py-16 px-6 sm:px-12 pt-22">
       <div className="flex flex-col lg:flex-row items-center lg:items-start">
         
         {/* Left Side - Image */}
