@@ -14,9 +14,11 @@ export default defineConfig({
     tailwindcss(),
   ],
 
-  // build: {
-  //   chunkSizeWarningLimit: 1000,
-  // },
+  build: {
+    chunkSizeWarningLimit: 2000,
+    minify: false, // Disable minification to debug
+    sourcemap: true, // Enable source maps for better debugging
+  },
 
   manualChunks: {
 		lodash: ['lodash']
