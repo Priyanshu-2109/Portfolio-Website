@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FiMenu, FiX } from "react-icons/fi"; 
+import { FiMenu, FiX } from "react-icons/fi";
 import { assets } from "../assets/asset";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      setIsOpen(false); // Close mobile menu on click
+      setIsOpen(false); // ✅ Close menu when clicking a section
       window.scrollTo({
         top: section.offsetTop - 45,
         behavior: "smooth",
@@ -33,9 +33,7 @@ const Navbar = () => {
     >
       {/* Logo */}
       <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide text-white">
-        <img src={assets.logo} alt="PRIYANSHU"
-          className="h-8 sm:h-9 w-[100%]"
-        />
+        <img src={assets.logo} alt="PRIYANSHU" className="h-8 sm:h-9 w-[100%]" />
       </h1>
 
       {/* Desktop Menu */}
@@ -46,7 +44,7 @@ const Navbar = () => {
         >
           About
         </button>
-        
+
         <button
           onClick={() => scrollToSection("education")}
           className="hover:text-gray-300 transition duration-300 text-white"
@@ -68,24 +66,24 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Button */}
+      {/* Mobile Menu Button - Fixed Padding & Clickable Area */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden text-white text-2xl"
+        className="lg:hidden text-white text-3xl p-2"
       >
         <FiMenu />
       </button>
 
       {/* Mobile Menu (Sidebar) */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 bg-transparent backdrop-blur-md flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-3/4 bg-black/80 backdrop-blur-lg flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         } lg:hidden`}
       >
         {/* Close Button Inside Sidebar */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-5 right-5 text-white text-3xl"
+          className="absolute top-5 right-5 text-white text-3xl p-2"
         >
           <FiX />
         </button>
@@ -110,7 +108,7 @@ const Navbar = () => {
         >
           Projects
         </button>
-        
+
         <button
           onClick={() => scrollToSection("contact")}
           className="py-3 text-xl text-white font-semibold tracking-wide hover:text-gray-300 transition-all duration-300"

@@ -13,7 +13,6 @@ export const assets = {
     portfolio_web,
 };
 
-
 export const projects = [
     {
         title: "EatEasy - Food Ordering Website",
@@ -31,7 +30,7 @@ export const projects = [
         title: "Portfolio Website - Priyanshu Chaniyara",
         description: "A modern, fully responsive personal portfolio website built with React, Tailwind CSS, and Framer Motion. It includes a fully working contact form for email communication.",
         image: portfolio_web,
-        github: " ",
+        github: "https://github.com/Priyanshu-2109/Portfolio-Website",
     },
     
 

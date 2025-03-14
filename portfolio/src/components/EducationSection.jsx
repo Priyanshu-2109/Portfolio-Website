@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 const educationData = [
   {
     title: "B. Tech (Computer Science and Engineering)",
-    institution: "Charotar University of Science and Technology, Anand, Gujarat",
+    institution:
+      "Charotar University of Science and Technology, Anand, Gujarat",
     duration: "2023 - 2027",
     grade: "Current CGPA: 9.18 / 10",
   },
@@ -50,7 +51,9 @@ const EducationSection = () => {
           <div
             key={index}
             className={`mb-10 ml-6 relative education-card transition-opacity transform duration-700 ${
-              index <= visibleIndex ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+              index <= visibleIndex
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-10"
             }`}
           >
             {/* Timeline Dot (Centered) */}
@@ -58,16 +61,19 @@ const EducationSection = () => {
 
             {/* Card Content */}
             <div className="bg-[#1a1a1a] p-5 rounded-lg shadow-lg w-full flex items-center justify-between">
-              
               {/* Details of card */}
               <div>
-                <p className="text-gray-400 text-sm font-medium">{edu.institution}</p>
-                <h3 className="text-lg font-semibold text-white mt-1">{edu.title}</h3>
+                <p className="text-gray-400 text-sm font-medium">
+                  {edu.institution}
+                </p>
+                <h3 className="text-lg font-semibold text-white mt-1">
+                  {edu.title}
+                </h3>
                 <p className="text-gray-300 text-sm mt-1">{edu.grade}</p>
               </div>
 
               {/* Right: Duration of education */}
-              <span className="px-4 py-2 text-xs sm:text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full">
+              <span className="px-3 sm:px-4 py-1 sm:py-2 text-[10px] sm:text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full">
                 {edu.duration}
               </span>
             </div>
