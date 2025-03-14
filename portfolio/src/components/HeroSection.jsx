@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pb-12 sm:pb-16 relative overflow-hidden mt-5">
+    <section id="home" className="pb-12 sm:pb-16 relative overflow-hidden mt-5">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 sm:gap-8 items-center max-w-7xl mx-auto px-3 sm:px-6">
         
         {/* Left Section */}
