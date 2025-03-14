@@ -27,9 +27,10 @@ const ContactSection = () => {
 
     try {
       //use local port to run it locally
-      // const response = await fetch("http://localhost:5000/api/email", {
-      const response = await fetch(
-        "https://portfolio-website-backend-ct3d.onrender.com/api/email",
+      // const response = await fetch(
+      //   "http://localhost:5000/api/email",
+        const response = await fetch(
+          "https://portfolio-website-backend-ct3d.onrender.com/api/email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -176,25 +177,51 @@ const ContactSection = () => {
           </div>
 
           {/* Submit Button */}
-          <button
+          {/* <button
             type="submit"
             className="w-full bg-purple-600 hover:bg-purple-500 text-white font-medium py-2 rounded-md transition text-sm"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Sending..." : "Send Message"}
+          </button> */}
+          <button
+            type="submit"
+            className="w-full bg-purple-600 hover:bg-purple-500 text-white font-medium py-2 rounded-md transition text-sm flex justify-center items-center"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <div className="flex items-center space-x-2">
+                <svg
+                  className="animate-spin h-4 w-4 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v8H4z"
+                  ></path>
+                </svg>
+                <span>Sending...</span>
+              </div>
+            ) : (
+              "Send Message"
+            )}
           </button>
         </motion.form>
       </div>
 
       {/* Toast Notification Container */}
-      <ToastContainer
-        toastClassName={
-          () => "text-sm sm:text-base" // Smaller text on mobile
-        }
-        bodyClassName={
-          () => "px-3 py-2 sm:px-4 sm:py-3" // Smaller padding on mobile
-        }
-      />
+      <ToastContainer />
     </section>
   );
 };

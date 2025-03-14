@@ -28,7 +28,8 @@ router.post("/", async (req, res) => {
       text: `Sender: ${name} (${email})\n\n${message}`,
       html: `<div style="font-family: Arial, sans-serif; color: #333; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background: #f9f9f9;">
       <h2 style="color: #4A90E2; margin-bottom: 10px;">📩 New Portfolio Inquiry</h2>
-      <p><strong>👤 Sender:</strong> ${name} (<a href="mailto:${email}" style="color: #007bff;">${email}</a>)</p>
+      <p><strong> Sender Name:</strong> ${name}</p>
+      <p><strong> Sender Email:</strong> <a href="mailto:${email}" style="color: #007bff;">${email}</a><p>
       <p><strong>📌 Subject:</strong> <span style="color: #4A90E2;">${subject}</span></p>
       <hr style="border: 1px solid #ddd; margin: 10px 0;">
       <p style="font-size: 14px; color: #555;"><strong>💬 Message:</strong></p>
