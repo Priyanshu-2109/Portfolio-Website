@@ -32,13 +32,20 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <h1 onClick={() => scrollToSection("home")} className="text-2xl sm:text-3xl font-extrabold tracking-wide text-white">
-        <img src={assets.logo} alt="PRIYANSHU" className="h-8 sm:h-9 w-[100%]" />
+      <h1
+        onClick={() => scrollToSection("home")}
+        className="text-2xl sm:text-3xl font-extrabold tracking-wide text-white"
+      >
+        <img
+          src={assets.logo}
+          alt="PRIYANSHU"
+          className="h-8 sm:h-9 max-w-[180px] w-auto object-contain"
+        />
       </h1>
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex space-x-8 text-l">
-      {/* <button
+        {/* <button
           onClick={() => scrollToSection("home")}
           className="hover:text-gray-300 transition duration-300 text-white"
         >
