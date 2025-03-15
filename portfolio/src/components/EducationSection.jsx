@@ -60,7 +60,7 @@ const EducationSection = () => {
             <div className="absolute -left-9 top-1/2 transform -translate-y-1/2 w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg border-4 border-white dark:border-[#121212]"></div>
 
             {/* Card Content */}
-            <div className="bg-[#1a1a1a] p-5 rounded-lg shadow-lg w-full flex flex-wrap sm:flex-nowrap items-center justify-between max-w-full">
+            <div className="bg-[#1a1a1a] p-5 rounded-lg shadow-lg w-full flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-full">
               {/* Details of card */}
               <div className="w-full sm:w-auto">
                 <p className="text-gray-400 text-sm font-medium break-words">
