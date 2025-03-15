@@ -30,14 +30,14 @@ const ProjectSection = () => {
   };
 
   return (
-    <section id="projects" className="py-10 sm:py-16 bg-gray-100 dark:bg-[#121212]">
+    <section id="projects" className="py-10 sm:py-16bg-[#121212]">
       {/* Section Title */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-6 sm:mb-10"
+        className="text-3xl sm:text-4xl font-bold text-center text-white mb-6 sm:mb-10"
       >
         My Projects
       </motion.h2>

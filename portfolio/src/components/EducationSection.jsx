@@ -41,12 +41,12 @@ const EducationSection = () => {
   }, []);
 
   return (
-    <div id="education" className="py-12 bg-gray-100 dark:bg-[#121212]">
-      <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10">
+    <div id="education" className="py-12 bg-[#121212] text-white">
+      <h2 className="text-3xl font-bold text-center text-white mb-10">
         Education
       </h2>
 
-      <div className="relative border-l-2 border-gray-300 dark:border-gray-700 ml-6">
+      <div className="relative border-l-2 border-gray-700 ml-6">
         {educationData.map((edu, index) => (
           <div
             key={index}
@@ -57,10 +57,11 @@ const EducationSection = () => {
             }`}
           >
             {/* Timeline Dot (Centered) */}
-            <div className="absolute -left-9 top-1/2 transform -translate-y-1/2 w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg border-4 border-white dark:border-[#121212]"></div>
+            <div className="absolute -left-9 top-1/2 transform -translate-y-1/2 w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg border-4 border-[#121212]"></div>
 
             {/* Card Content */}
             <div className="bg-[#1a1a1a] p-5 rounded-lg shadow-lg w-full flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-full">
+
               {/* Details of card */}
               <div className="w-full sm:w-auto">
                 <p className="text-gray-400 text-sm font-medium break-words">
