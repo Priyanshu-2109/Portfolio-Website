@@ -62,8 +62,8 @@ const HeroSection = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/Priyanshu_Resume.pdf"; // Ensure this file is inside the public folder
-                link.download = "Priyanshu_Resume.pdf";
+                link.href = "/Priyanshu Chaniyara - Resume.pdf"; // Ensure this file is inside the public folder
+                link.download = "Priyanshu Chaniyara - Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
