@@ -159,76 +159,70 @@ const TimelineExperienceCard = ({
   );
 };
 
-// Responsive TimelineExperienceCard for mobile
-const MobileTimelineCard = ({ experience, index }) => {
+// Responsive ExperienceCard for mobile - Clean card layout without timeline
+const MobileExperienceCard = ({ experience, index }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "-30px" }}
       transition={{
-        duration: 0.6,
+        duration: 0.5,
         delay: index * 0.1,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="mb-6 relative"
+      className="mb-3 mx-4"
     >
-      {/* Timeline Connector */}
-      {index !== 0 && (
-        <div className="absolute top-0 left-7 w-px h-6 -mt-6 bg-gradient-to-b from-transparent to-blue-600/20"></div>
-      )}{" "}
       <SpotlightCard
-        className="bg-[#1a1a1a] rounded-xl border border-gray-700/50 shadow-lg p-0 hover:border-gray-600/70 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300"
-        spotlightColor="rgba(59, 130, 246, 0.15)"
+        className="bg-[#1a1a1a] rounded-lg border border-gray-700/50 shadow-md p-0 hover:border-gray-600/70 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300"
+        spotlightColor="rgba(59, 130, 246, 0.1)"
       >
-        <div className="p-6">
-          <div className="flex items-start">
-            {/* Timeline Node */}
-            <div className="mr-4 mt-2">
-              <div className="w-4 h-4 rounded-full bg-blue-600 border-4 border-[#121212] shadow-lg"></div>
-            </div>
-
-            <div className="flex-1">
-              {/* Duration */}
-              <div className="text-blue-400 text-sm font-semibold mb-3 flex items-center">
-                <svg
-                  className="w-4 h-4 mr-1.5 text-blue-400/70"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                {experience.duration}
-              </div>
-
-              {/* Role & Company */}
-              <h3 className="text-lg font-bold text-white mb-2 leading-tight">
+        {" "}
+        <div className="p-3">
+          <div className="flex items-center">
+            <div className="flex-1 min-w-0">
+              {/* Role */}
+              <h3 className="text-sm font-bold text-white mb-0.5 leading-tight truncate">
                 {experience.role}
               </h3>
-              <div className="text-blue-400 font-semibold mb-3 relative inline-block">
+
+              {/* Company */}
+              <div className="text-blue-400 font-medium mb-1 text-xs">
                 {experience.company}
-                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400/60 to-transparent"></div>
               </div>
-              {/* Location */}
-              <div className="text-gray-400 text-sm flex items-center">
-                <svg
-                  className="w-3.5 h-3.5 mr-1.5 text-blue-400/70"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                {experience.location}
+
+              {/* Duration and Location in same line */}
+              <div className="flex items-center justify-between text-xs text-gray-400">
+                <div className="flex items-center">
+                  <svg
+                    className="w-2.5 h-2.5 mr-1 text-blue-400/70"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  {experience.duration}
+                </div>
+                <div className="flex items-center">
+                  <svg
+                    className="w-2.5 h-2.5 mr-1 text-blue-400/70"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                  {experience.location}
+                </div>
               </div>
             </div>
           </div>
@@ -277,7 +271,6 @@ const Experience = () => {
 
           <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto rounded-full mt-6"></div>
         </motion.div>
-
         {/* Desktop Timeline - Hidden on Mobile */}
         <div className="hidden md:block relative">
           {/* Vertical Timeline Line */}
@@ -297,15 +290,18 @@ const Experience = () => {
               isLast={index === experiences.length - 1}
             />
           ))}
-        </div>
-
-        {/* Mobile Timeline - Shown on Mobile Only */}
-        <div className="md:hidden relative">
-          <div className="absolute left-7 top-0 bottom-0 w-px bg-gradient-to-b from-blue-600/20 via-indigo-500/30 to-blue-600/10"></div>
-
-          {experiences.map((exp, index) => (
-            <MobileTimelineCard key={index} experience={exp} index={index} />
-          ))}
+        </div>{" "}
+        {/* Mobile Cards - Shown on Mobile Only */}
+        <div className="md:hidden">
+          <div className="space-y-3">
+            {experiences.map((exp, index) => (
+              <MobileExperienceCard
+                key={index}
+                experience={exp}
+                index={index}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
