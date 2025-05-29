@@ -5,7 +5,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
   useEffect(() => {
-    // Animate progress from 0 to 100 over 3 seconds
+    // Animate progress from 0 to 100 over 3 seconds with smoother increments
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -13,12 +13,12 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           // Call onLoadingComplete immediately so portfolio renders behind the curtains
           onLoadingComplete();
           // Start theater curtain opening animation after a brief moment
-          setTimeout(() => setIsExiting(true), 100);
+          setTimeout(() => setIsExiting(true), 150);
           return 100;
         }
-        return prev + 1.67; // Adjusted increment for 3 second duration (100 / 60 frames ≈ 1.67)
+        return prev + 1.25; // Smoother increment for 3.2 second duration
       });
-    }, 50); // Reduced interval for smoother animation
+    }, 40); // Higher frequency for ultra-smooth animation
 
     return () => clearInterval(interval);
   }, [onLoadingComplete]);
@@ -33,45 +33,47 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     <>
       {" "}
       {/* Loading Screen with theater curtain opening effect */}
-      <div className="fixed inset-0 z-50 overflow-hidden">
-        {/* Top curtain half - rises up like theater curtain */}
+      <div className="fixed inset-0 z-50 overflow-hidden bg-[#121212]">
+        {/* Top curtain half - rises up like theater curtain */}{" "}
         <motion.div
-          className="absolute top-0 left-0 right-0 h-1/2 bg-[#0a0a0a]"
+          className="absolute top-0 left-0 right-0 h-1/2 bg-[#121212]"
           animate={isExiting ? { y: "-100%" } : { y: 0 }}
           transition={{
-            duration: 1.2,
+            duration: 1.5,
             ease: [0.25, 0.1, 0.25, 1],
             delay: 0,
           }}
-        />
-        {/* Bottom curtain half - drops down like theater curtain */}
+        />{" "}
+        {/* Bottom curtain half - drops down like theater curtain */}{" "}
         <motion.div
-          className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#0a0a0a]"
+          className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#121212]"
           animate={isExiting ? { y: "100%" } : { y: 0 }}
           transition={{
-            duration: 1.2,
+            duration: 1.5,
             ease: [0.25, 0.1, 0.25, 1],
             delay: 0,
           }}
         />{" "}
         {/* Loading content container - positioned over both curtain halves */}
         <div className="absolute inset-0 z-10 h-full flex flex-col items-center justify-center">
+          {" "}
           <motion.div
             className="w-full max-w-md px-6 text-center"
             animate={
               isExiting ? { opacity: 0, scale: 0.8 } : { opacity: 1, scale: 1 }
             }
-            transition={{ duration: 0.6, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: [0.25, 0.8, 0.25, 1] }}
           >
+            {" "}
             {/* Name/Logo */}
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.25, 0.8, 0.25, 1] }}
               className="text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
             >
               Priyanshu
             </motion.h1>
-
             {/* Title */}
             <motion.p
               initial={{ opacity: 0 }}
@@ -81,7 +83,6 @@ const LoadingScreen = ({ onLoadingComplete }) => {
             >
               Full Stack Developer
             </motion.p>
-
             {/* Simple gradient line separator */}
             <motion.div
               className="h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 my-6 mx-auto rounded-full"
@@ -89,7 +90,6 @@ const LoadingScreen = ({ onLoadingComplete }) => {
               animate={{ width: "100%" }}
               transition={{ delay: 0.3, duration: 0.8 }}
             />
-
             {/* Clean circular progress loader */}
             <motion.div
               className="mx-auto my-8 relative"
@@ -149,7 +149,6 @@ const LoadingScreen = ({ onLoadingComplete }) => {
                 {Math.round(progress)}%
               </div>
             </motion.div>
-
             {/* Developer tag */}
             <motion.div
               initial={{ opacity: 0 }}
