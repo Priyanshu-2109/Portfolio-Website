@@ -33,7 +33,9 @@ const HeroSection = () => {
               sequence={[
                 "Priyanshu",
                 1300,
-                "Web Developer",
+                "Full Stack Dev",
+                1300,
+                "Freelancer",
                 1300,
                 "CP Enthusiast",
                 1300,
@@ -62,8 +64,8 @@ const HeroSection = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/Priyanshu Chaniyara - Resume.pdf"; // Ensure this file is inside the public folder
-                link.download = "Priyanshu Chaniyara - Resume.pdf";
+                link.href = "/Resume - Priyanshu Chaniyara.pdf"; // Ensure this file is inside the public folder
+                link.download = "Resume - Priyanshu Chaniyara.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);

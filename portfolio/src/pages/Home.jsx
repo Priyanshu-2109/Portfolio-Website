@@ -8,6 +8,7 @@ import EducationSection from '../components/EducationSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 // import SplashCursor from './SplashCursor'
+import Experience from '../components/Experience';
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <AchievementsSection />
       <AboutSection />
       <EducationSection />
+      <Experience />
       <ProjectsSection />
       <ContactSection />
       <Footer />
