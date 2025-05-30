@@ -101,9 +101,9 @@ function App() {
                     opacity: [0, 0.9, 0],
                   }}
                   transition={{
-                    duration: 2.5,
-                    delay: i * 0.4,
-                    ease: [0.25, 0.8, 0.25, 1],
+                    duration: 3.0,
+                    delay: i * 0.3,
+                    ease: [0.16, 1, 0.3, 1],
                   }}
                 />
               ))}
