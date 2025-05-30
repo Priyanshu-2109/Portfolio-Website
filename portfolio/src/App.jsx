@@ -45,7 +45,7 @@ function App() {
       </AnimatePresence>
 
       {/* Transition Effects Layer */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {showTransition && !showPortfolio && (
           <motion.div
             key="transition"
@@ -53,7 +53,11 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.8, ease: [0.25, 0.8, 0.25, 1] }}
+            transition={{
+              duration: 1.2,
+              ease: [0.16, 1, 0.3, 1],
+              exit: { duration: 1.5, ease: [0.16, 1, 0.3, 1] },
+            }}
           >
             {/* Floating particles */}
             <div className="absolute inset-0">
