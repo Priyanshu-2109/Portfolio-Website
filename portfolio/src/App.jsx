@@ -86,10 +86,7 @@ function App() {
               {[...Array(3)].map((_, i) => (
                 <motion.div
                   key={i}
-                  className="absolute border-2 border-[#8B5CF6]/70 rounded-full shadow-lg shadow-[#8B5CF6]/50"
-                  style={{
-                    boxShadow: `0 0 ${20 + i * 10}px rgba(139, 92, 246, 0.6), inset 0 0 ${10 + i * 5}px rgba(139, 92, 246, 0.3)`,
-                  }}
+                  className="absolute border border-[#8B5CF6]/30 rounded-full"
                   initial={{
                     width: 0,
                     height: 0,
@@ -98,7 +95,7 @@ function App() {
                   animate={{
                     width: [0, 300, 600],
                     height: [0, 300, 600],
-                    opacity: [0, 0.9, 0],
+                    opacity: [0, 0.6, 0],
                   }}
                   transition={{
                     duration: 3.0,
