@@ -141,29 +141,51 @@ function App() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{
-                  duration: 1.0,
+                  duration: 1.5,
                   delay: 0.6,
-                  ease: [0.25, 0.8, 0.25, 1],
+                  ease: [0.16, 1, 0.3, 1],
                 }}
               >
                 <motion.h2
                   className="text-4xl font-bold bg-gradient-to-r from-[#007BFF] via-[#8B5CF6] to-[#FF69B4] bg-clip-text text-transparent"
+                  initial={{ opacity: 0, y: 20, scale: 0.9 }}
                   animate={{
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
                     backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                   }}
                   transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: [0.25, 0.8, 0.25, 1],
+                    opacity: {
+                      duration: 1.2,
+                      delay: 0.8,
+                      ease: [0.16, 1, 0.3, 1],
+                    },
+                    y: { duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] },
+                    scale: {
+                      duration: 1.2,
+                      delay: 0.8,
+                      ease: [0.16, 1, 0.3, 1],
+                    },
+                    backgroundPosition: {
+                      duration: 3.5,
+                      delay: 1.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    },
                   }}
                 >
                   Welcome
                 </motion.h2>
                 <motion.p
                   className="text-gray-300 mt-2 text-lg"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 1 }}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 1.0,
+                    delay: 1.3,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
                 >
                   to my digital space
                 </motion.p>
