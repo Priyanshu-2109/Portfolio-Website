@@ -51,13 +51,13 @@ const skillsData = [
     borderColor: "#FFFFFF",
     gradient: "linear-gradient(145deg, #FFFFFF, #121212)",
   },
-//   {
-//     image:
-//       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
-//     title: "Framer Motion",
-//     borderColor: "#0055FF",
-//     gradient: "linear-gradient(145deg, #0055FF, #121212)",
-//   },
+  //   {
+  //     image:
+  //       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
+  //     title: "Framer Motion",
+  //     borderColor: "#0055FF",
+  //     gradient: "linear-gradient(145deg, #0055FF, #121212)",
+  //   },
   {
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
