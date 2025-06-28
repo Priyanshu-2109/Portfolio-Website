@@ -165,7 +165,7 @@ const AboutMeSkills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6 sm:mb-8 h-[350px] sm:h-[400px] lg:h-[450px] relative"
+          className="mb-16 sm:mb-16 lg:mb-20 h-[480px] sm:h-[320px] lg:h-[350px] relative"
         >
           <ChromaGrid
             items={skillsData}

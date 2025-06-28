@@ -129,7 +129,7 @@ const ChromaGrid = ({
       ref={rootRef}
       onPointerMove={handleMove}
       onPointerLeave={handleLeave}
-      className={`relative w-full h-full flex flex-wrap justify-center items-start gap-2 sm:gap-3 lg:gap-4 bg-[#121212] ${className}`}
+      className={`relative w-full h-full flex flex-wrap justify-center items-start gap-x-1 gap-y-2 sm:gap-x-3 sm:gap-y-1.5 lg:gap-x-4 lg:gap-y-2 bg-[#121212] ${className}`}
       style={{
         "--r": `${radius}px`,
         "--x": "50%",
@@ -141,7 +141,7 @@ const ChromaGrid = ({
           key={i}
           onMouseMove={handleCardMove}
           onClick={() => handleCardClick(c.url)}
-          className="group relative flex flex-col w-[80px] h-[90px] sm:w-[90px] sm:h-[100px] lg:w-[100px] lg:h-[110px] rounded-[8px] overflow-hidden border-2 border-transparent transition-colors duration-300 cursor-pointer"
+          className="group relative flex flex-col w-[calc(33.333%-8px)] max-w-[90px] h-[90px] sm:w-[90px] sm:h-[100px] lg:w-[100px] lg:h-[110px] rounded-[8px] overflow-hidden border-2 border-transparent transition-colors duration-300 cursor-pointer"
           style={{
             "--card-border": c.borderColor || "transparent",
             background: c.gradient,
@@ -177,9 +177,9 @@ const ChromaGrid = ({
           WebkitBackdropFilter: "grayscale(1) brightness(1)",
           background: "rgba(18,18,18,0.8)",
           maskImage:
-            "radial-gradient(circle var(--r) at var(--x) var(--y),transparent 0%,transparent 15%,rgba(0,0,0,0.10) 30%,rgba(0,0,0,0.22)45%,rgba(0,0,0,0.35)60%,rgba(0,0,0,0.50)75%,rgba(0,0,0,0.68)88%,white 100%)",
+            "radial-gradient(circle var(--r) at var(--x) var(--y),transparent 0%,transparent 10%,rgba(0,0,0,0.05) 20%,rgba(0,0,0,0.15)35%,rgba(0,0,0,0.25)50%,rgba(0,0,0,0.40)65%,rgba(0,0,0,0.60)80%,white 100%)",
           WebkitMaskImage:
-            "radial-gradient(circle var(--r) at var(--x) var(--y),transparent 0%,transparent 15%,rgba(0,0,0,0.10) 30%,rgba(0,0,0,0.22)45%,rgba(0,0,0,0.35)60%,rgba(0,0,0,0.50)75%,rgba(0,0,0,0.68)88%,white 100%)",
+            "radial-gradient(circle var(--r) at var(--x) var(--y),transparent 0%,transparent 10%,rgba(0,0,0,0.05) 20%,rgba(0,0,0,0.15)35%,rgba(0,0,0,0.25)50%,rgba(0,0,0,0.40)65%,rgba(0,0,0,0.60)80%,white 100%)",
         }}
       />
       <div
@@ -190,9 +190,9 @@ const ChromaGrid = ({
           WebkitBackdropFilter: "grayscale(1) brightness(1)",
           background: "rgba(18,18,18,0.8)",
           maskImage:
-            "radial-gradient(circle var(--r) at var(--x) var(--y),white 0%,white 15%,rgba(255,255,255,0.90)30%,rgba(255,255,255,0.78)45%,rgba(255,255,255,0.65)60%,rgba(255,255,255,0.50)75%,rgba(255,255,255,0.32)88%,transparent 100%)",
+            "radial-gradient(circle var(--r) at var(--x) var(--y),white 0%,white 10%,rgba(255,255,255,0.95)20%,rgba(255,255,255,0.85)35%,rgba(255,255,255,0.75)50%,rgba(255,255,255,0.60)65%,rgba(255,255,255,0.40)80%,transparent 100%)",
           WebkitMaskImage:
-            "radial-gradient(circle var(--r) at var(--x) var(--y),white 0%,white 15%,rgba(255,255,255,0.90)30%,rgba(255,255,255,0.78)45%,rgba(255,255,255,0.65)60%,rgba(255,255,255,0.50)75%,rgba(255,255,255,0.32)88%,transparent 100%)",
+            "radial-gradient(circle var(--r) at var(--x) var(--y),white 0%,white 10%,rgba(255,255,255,0.95)20%,rgba(255,255,255,0.85)35%,rgba(255,255,255,0.75)50%,rgba(255,255,255,0.60)65%,rgba(255,255,255,0.40)80%,transparent 100%)",
           opacity: 1,
         }}
       />
