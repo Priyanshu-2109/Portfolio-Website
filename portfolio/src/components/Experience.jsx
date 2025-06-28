@@ -176,7 +176,9 @@ const MobileExperienceCard = ({ experience, index }) => {
       <SpotlightCard
         className="bg-[#1a1a1a] rounded-lg border border-gray-700/50 shadow-md p-0 hover:border-gray-600/70 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300"
         spotlightColor="rgba(59, 130, 246, 0.1)"
-      >        {" "}        <div className="p-4">
+      >
+        {" "}
+        <div className="p-4">
           <div className="flex items-center">
             <div className="flex-1 min-w-0">
               {/* Role */}
@@ -189,7 +191,9 @@ const MobileExperienceCard = ({ experience, index }) => {
                 {experience.company}
               </div>
               {/* Duration and Location in same line */}
-              <div className="flex items-center justify-between text-lg text-gray-400 flex-wrap gap-2">                <div className="flex items-center">
+              <div className="flex items-center justify-between text-lg text-gray-400 flex-wrap gap-2">
+                {" "}
+                <div className="flex items-center">
                   <svg
                     className="w-4 h-4 mr-1.5 text-blue-400/70"
                     fill="none"
@@ -248,7 +252,8 @@ const Experience = () => {
             <div key={i} className="border-b border-white/10 w-full"></div>
           ))}
         </div>
-      </div>      <div className="container mx-auto px-2 max-w-5xl relative z-10">
+      </div>{" "}
+      <div className="container mx-auto px-2 max-w-5xl relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -285,7 +290,7 @@ const Experience = () => {
               isLast={index === experiences.length - 1}
             />
           ))}
-        </div>        
+        </div>
         {/* Mobile Cards - Shown on Mobile Only */}
         <div className="md:hidden -mx-2">
           <div className="space-y-6 px-1">

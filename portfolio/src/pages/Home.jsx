@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import AboutSection from "../components/AboutSection";
+import AboutMeSkills from "../components/AboutMeSkills";
 import AchievementsSection from "../components/AchievementsSection";
 import ProjectsSection from "../components/ProjectsSection";
 import EducationSection from "../components/EducationSection";
@@ -71,6 +72,10 @@ const Home = () => {
 
         <motion.div variants={sectionVariants}>
           <AboutSection />
+        </motion.div>
+
+        <motion.div variants={sectionVariants}>
+          <AboutMeSkills />
         </motion.div>
 
         <motion.div variants={sectionVariants}>

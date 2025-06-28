@@ -56,7 +56,7 @@ const ProjectSection = () => {
       </motion.div>
 
       {/* "See More" / "See Less" Button */}
-      {(projects.length > (isMobile ? 3 : 6)) && (
+      {projects.length > (isMobile ? 3 : 6) && (
         <div className="flex justify-center mt-6 sm:mt-8">
           <button
             onClick={handleToggleProjects}

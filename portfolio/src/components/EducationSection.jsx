@@ -61,7 +61,6 @@ const EducationSection = () => {
 
             {/* Card Content */}
             <div className="bg-[#1a1a1a] p-5 rounded-lg shadow-lg w-full flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-full">
-
               {/* Details of card */}
               <div className="w-full sm:w-auto">
                 <p className="text-gray-400 text-sm font-medium break-words">
