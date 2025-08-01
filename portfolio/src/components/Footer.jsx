@@ -3,7 +3,7 @@ import { assets } from "../assets/asset";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#121212] text-white py-4 mt-5">
+    <footer className="bg-transparent relative text-white py-4 mt-5">
       {/* White Separator Line */}
       <div className="border-t border-gray-600 w-full mb-4"></div>
 

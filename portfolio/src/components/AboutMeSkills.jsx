@@ -140,7 +140,7 @@ const AboutMeSkills = () => {
   return (
     <section
       id="skills"
-      className="text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-12 bg-[#121212]"
+      className="text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-12 bg-transperent relative"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -173,6 +173,7 @@ const AboutMeSkills = () => {
             damping={0.4}
             fadeOut={0.6}
             ease="power3.out"
+            className="bg-transparent"
           />
         </motion.div>
       </div>

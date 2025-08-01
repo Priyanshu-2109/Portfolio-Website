@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-12 pt-22 bg-[#121212]"
+      className="text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-12 pt-22 bg-transparent relative"
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">

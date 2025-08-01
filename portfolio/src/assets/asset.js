@@ -6,6 +6,7 @@ import logo from "./portfolio_logo.png";
 import portfolio_web from "./portfolio_web.png";
 import visionflow from "./visionflow.avif";
 import bharti_logo from "./bharti_logo.png";
+import priyanshu from "./priyanshu.jpg"
 
 export const assets = {
   aboutimg,
@@ -15,6 +16,7 @@ export const assets = {
   portfolio_web,
   visionflow,
   bharti_logo,
+  priyanshu
 };
 
 export const projects = [

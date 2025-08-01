@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Home from "./pages/Home";
 import LoadingScreen from "./components/LoadingScreen.jsx";
+import Particles from "./uiCodes/Particles";
 // import { Analytics } from "@vercel/analytics/react"
 
 function App() {
@@ -24,6 +25,20 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#121212] relative overflow-hidden">
+      {/* Particles Background - Always visible */}
+      <div className="fixed inset-0 z-0">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
+
       {/* Portfolio content - rendered when showPortfolio is true */}
       <AnimatePresence>
         {showPortfolio && (
@@ -36,6 +51,7 @@ function App() {
               ease: [0.25, 0.8, 0.25, 1],
               staggerChildren: 0.15,
             }}
+            className="relative z-10"
           >
             <Routes>
               <Route path="/" element={<Home />} />
@@ -214,10 +230,12 @@ function App() {
       {/* Loading screen overlay */}
       <AnimatePresence>
         {isLoading && (
-          <LoadingScreen
-            key="loading"
-            onLoadingComplete={handleLoadingComplete}
-          />
+          <div className="relative z-50">
+            <LoadingScreen
+              key="loading"
+              onLoadingComplete={handleLoadingComplete}
+            />
+          </div>
         )}
       </AnimatePresence>
     </div>

@@ -44,7 +44,7 @@ const sectionVariants = {
 const Home = () => {
   return (
     <motion.main
-      className="flex min-h-screen flex-col bg-[#121212]"
+      className="flex min-h-screen flex-col bg-transparent relative z-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

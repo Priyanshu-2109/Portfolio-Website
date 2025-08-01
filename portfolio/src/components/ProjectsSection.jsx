@@ -30,7 +30,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <section id="projects" className="py-10 sm:py-16bg-[#121212]">
+    <section id="projects" className="py-10 sm:py-16 bg-transparent relative">
       {/* Section Title */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}

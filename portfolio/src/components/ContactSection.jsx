@@ -64,7 +64,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-12 bg-[#121212] text-white mt-13">
+    <section
+      id="contact"
+      className="py-12 bg-transparent relative text-white mt-13"
+    >
       <div className="max-w-5xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10">
         {/* Left Section - Contact Info */}
         <motion.div

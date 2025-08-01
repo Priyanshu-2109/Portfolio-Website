@@ -41,7 +41,7 @@ const EducationSection = () => {
   }, []);
 
   return (
-    <div id="education" className="py-12 bg-[#121212] text-white">
+    <div id="education" className="py-12 bg-transparent relative text-white">
       <h2 className="text-3xl font-bold text-center text-white mb-10">
         Education
       </h2>

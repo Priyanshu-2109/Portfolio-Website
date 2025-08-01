@@ -236,7 +236,7 @@ const Experience = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id="experience" className="py-24 bg-[#121212] relative">
+    <section id="experience" className="py-24 bg-transparent relative">
       {" "}
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

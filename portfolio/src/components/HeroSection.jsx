@@ -70,7 +70,7 @@ const HeroSection = () => {
                 link.click();
                 document.body.removeChild(link);
               }}
-              className="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-transparent hover:bg-slate-800 text-white border shadow-md transform hover:scale-105 font-semibold transition duration-300"
+              className="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-transparent backdrop-blur-xs hover:bg-slate-800 text-white border shadow-md transform hover:scale-105 font-semibold transition duration-300"
             >
               Download Resume
             </button>
@@ -79,9 +79,9 @@ const HeroSection = () => {
 
         {/* Right Section (Image with Border) */}
         <div className="col-span-12 sm:col-span-5 flex justify-center lg:justify-end mt-6 sm:mt-0">
-          <div className="relative rounded-full bg-[#181818] w-auto h-auto max-w-[70%] sm:max-w-[80%] lg:max-w-[100%] flex items-center justify-center shadow-lg shadow-purple-600/50">
+          <div className="relative rounded-full bg-[#181818] w-auto h-auto max-w-[70%] sm:max-w-[80%] lg:max-w-[100%] flex items-center justify-center shadow-lg shadow-purple-600/60">
             <img
-              src={assets.profile}
+              src={assets.priyanshu}
               alt="Hero Image"
               className="w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] lg:w-[345px] lg:h-[345px] rounded-full object-cover"
             />
