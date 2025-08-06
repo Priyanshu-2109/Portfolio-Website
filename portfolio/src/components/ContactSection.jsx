@@ -116,7 +116,7 @@ const ContactSection = () => {
           <div className="mt-12 space-y-3 text-gray-400 text-sm">
             <div className="flex items-center space-x-3">
               <FaMapMarkerAlt className="text-lg" />
-              <span>Vadodara, Gujarat, India</span>
+              <span>Gujarat, India</span>
             </div>
             <div className="flex items-center space-x-3">
               <FaPhone className="text-lg" />

@@ -14,12 +14,12 @@ const educationData = [
     duration: "2022 - 2023",
     grade: "Percentage: 76.67%",
   },
-  {
-    title: "Secondary - X (GSEB)",
-    institution: "Shree Swami Vivekanand Vidhyalaya - 2, Vadodara, Gujarat",
-    duration: "2020 - 2021",
-    grade: "Percentage: 92.34%",
-  },
+  // {
+  //   title: "Secondary - X (GSEB)",
+  //   institution: "Shree Swami Vivekanand Vidhyalaya - 2, Vadodara, Gujarat",
+  //   duration: "2020 - 2021",
+  //   grade: "Percentage: 92.34%",
+  // },
 ];
 
 const EducationSection = () => {

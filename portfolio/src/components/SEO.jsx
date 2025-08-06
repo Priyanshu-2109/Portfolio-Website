@@ -1,9 +1,9 @@
 import React from "react";
 
 const SEO = ({
-  title = "Priyanshu Chaniyara | Freelance Full Stack Developer & Web Developer",
-  description = "Hire Priyanshu Chaniyara - Experienced Freelance Full Stack Developer specializing in React, Node.js, MongoDB. Available for custom website development, web applications & e-commerce projects.",
-  keywords = "Priyanshu Chaniyara, Freelance Full Stack Developer, Freelance Web Developer, Hire Freelancer, Custom Website Development, React Developer for Hire, Node.js Developer, MongoDB, JavaScript, Vadodara Freelancer, Gujarat",
+  title = "Priyanshu Chaniyara - Official Portfolio | Freelance Full Stack Developer",
+  description = "Official portfolio of Priyanshu Chaniyara - Professional Freelance Full Stack Developer. Expert in React, Node.js, MongoDB. Available for custom website development and web applications.",
+  keywords = "Priyanshu Chaniyara official portfolio, Priyanshu Chaniyara developer, Priyanshu Chaniyara freelancer, Freelance Full Stack Developer, Priyanshu Chaniyara React developer, Professional web developer Gujarat, Priyanshu Chaniyara official website",
   image = "https://priyanshu-chaniyara.me/portfolio_web.png",
   url = "https://priyanshu-chaniyara.me",
   type = "website",

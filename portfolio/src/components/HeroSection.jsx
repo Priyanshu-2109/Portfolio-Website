@@ -81,7 +81,7 @@ const HeroSection = () => {
           <div className="relative rounded-full bg-[#181818] w-auto h-auto max-w-[70%] sm:max-w-[80%] lg:max-w-[100%] flex items-center justify-center shadow-lg shadow-purple-600/60">
             <img
               src={assets.priyanshu}
-              alt="Priyanshu Chaniyara - Full Stack Developer, Freelancer and Web Developer from Vadodara, Gujarat"
+              alt="Priyanshu Chaniyara - Full Stack Developer, Freelancer and Web Developer"
               className="w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] lg:w-[345px] lg:h-[345px] rounded-full object-cover"
             />
           </div>

@@ -36,7 +36,7 @@ function App() {
       {/* Particles Background - Always visible */}
       <div className="fixed inset-0 z-0">
         <Particles
-          particleColors={["#ffffff", "#~"]}
+          particleColors={["#ffffff", "#ffffff"]}
           particleCount={200}
           particleSpread={10}
           speed={0.1}

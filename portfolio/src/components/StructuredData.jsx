@@ -9,13 +9,11 @@ const StructuredData = () => {
     url: "https://priyanshu-chaniyara.me",
     image: "https://priyanshu-chaniyara.me/portfolio_web.png",
     sameAs: [
-      "https://github.com/Priyanshu-2109",
       "https://www.linkedin.com/in/priyanshu-chaniyara/",
-      "https://www.instagram.com/priyanshu_chaniyara/",
+      "https://github.com/Priyanshu-2109",
     ],
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Vadodara",
       addressRegion: "Gujarat",
       addressCountry: "India",
     },
@@ -50,7 +48,7 @@ const StructuredData = () => {
       "Portfolio Website Development",
     ],
     description:
-      "Passionate Freelance Full Stack Developer specializing in React, Node.js, MongoDB, and modern web technologies. Available for hire for custom web development projects.",
+      "Official portfolio of Priyanshu Chaniyara - Professional Freelance Full Stack Developer. Expert in React, Node.js, MongoDB development and modern web technologies.",
     serviceType: [
       "Web Development",
       "Full Stack Development",
@@ -61,36 +59,40 @@ const StructuredData = () => {
       "Portfolio Development",
       "Web Application Development",
     ],
-    areaServed: ["Vadodara", "Gujarat", "India", "Worldwide"],
+    areaServed: ["Gujarat", "India", "Worldwide"],
   };
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Priyanshu Chaniyara Portfolio",
+    name: "Priyanshu Chaniyara Official Portfolio",
     url: "https://priyanshu-chaniyara.me",
     description:
-      "Portfolio website of Priyanshu Chaniyara, Full Stack Developer from Vadodara, Gujarat",
+      "Official portfolio website of Priyanshu Chaniyara, Professional Full Stack Developer",
     author: {
       "@type": "Person",
       name: "Priyanshu Chaniyara",
     },
     inLanguage: "en-US",
+    mainEntity: {
+      "@type": "Person",
+      name: "Priyanshu Chaniyara",
+    },
   };
 
   const portfolioSchema = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    name: "Priyanshu Chaniyara Portfolio",
+    name: "Priyanshu Chaniyara Official Portfolio",
     description:
-      "A collection of web development projects showcasing Full Stack development skills and freelance services",
+      "Official portfolio showcasing professional web development projects and freelance services by Priyanshu Chaniyara",
     creator: {
       "@type": "Person",
       name: "Priyanshu Chaniyara",
     },
     url: "https://priyanshu-chaniyara.me",
     keywords:
-      "portfolio, web development, full stack, react, nodejs, freelance developer, custom websites",
+      "Priyanshu Chaniyara official portfolio, professional web development, freelance developer, full stack projects",
   };
 
   const serviceSchema = {
