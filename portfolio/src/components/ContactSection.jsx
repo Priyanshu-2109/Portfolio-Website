@@ -120,7 +120,7 @@ const ContactSection = () => {
             </div>
             <div className="flex items-center space-x-3">
               <FaPhone className="text-lg" />
-              <span>+91 9054442111</span>
+              <span>+91 90XXXXXXX1 (Mails Only)</span>
             </div>
             <div className="flex items-center space-x-3">
               <FaEnvelope className="text-lg" />

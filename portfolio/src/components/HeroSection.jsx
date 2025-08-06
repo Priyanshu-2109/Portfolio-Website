@@ -14,7 +14,6 @@ const HeroSection = () => {
   return (
     <section id="home" className="pb-12 sm:pb-16 relative overflow-hidden mt-5">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 sm:gap-8 items-center max-w-7xl mx-auto px-3 sm:px-6">
-        
         {/* Left Section */}
         <div className="col-span-12 sm:col-span-7 text-center sm:text-left max-w-md sm:max-w-lg mx-auto">
           {/* Animated Gradient Text for "Hello, I'm" */}
@@ -64,7 +63,7 @@ const HeroSection = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/Priyanshu Chaniyara - Resume.pdf"; // Ensure this file is inside the public folder
+                link.href = "/Resume - Priyanshu Chaniyara.pdf"; // Ensure this file is inside the public folder
                 link.download = "Priyanshu Chaniyara - Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
@@ -82,7 +81,7 @@ const HeroSection = () => {
           <div className="relative rounded-full bg-[#181818] w-auto h-auto max-w-[70%] sm:max-w-[80%] lg:max-w-[100%] flex items-center justify-center shadow-lg shadow-purple-600/60">
             <img
               src={assets.priyanshu}
-              alt="Hero Image"
+              alt="Priyanshu Chaniyara - Full Stack Developer, Freelancer and Web Developer from Vadodara, Gujarat"
               className="w-[180px] h-[180px] sm:w-[240px] sm:h-[240px] lg:w-[345px] lg:h-[345px] rounded-full object-cover"
             />
           </div>

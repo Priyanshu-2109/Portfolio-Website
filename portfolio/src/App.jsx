@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Home from "./pages/Home";
 import LoadingScreen from "./components/LoadingScreen.jsx";
+import SEO from "./components/SEO.jsx";
+import StructuredData from "./components/StructuredData.jsx";
 import Particles from "./uiCodes/Particles";
 // import { Analytics } from "@vercel/analytics/react"
 
@@ -25,10 +27,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#121212] relative overflow-hidden">
+      {/* SEO Component */}
+      <SEO />
+
+      {/* Structured Data */}
+      <StructuredData />
+
       {/* Particles Background - Always visible */}
       <div className="fixed inset-0 z-0">
         <Particles
-          particleColors={["#ffffff", "#ffffff"]}
+          particleColors={["#ffffff", "#~"]}
           particleCount={200}
           particleSpread={10}
           speed={0.1}
