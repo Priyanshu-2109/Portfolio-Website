@@ -3,7 +3,7 @@ import CountUp from "./CountUp";
 
 const achievementsList = [
   { id: 1, metric: "Projects Completed", value: 7, postfix: "+" },
-  { id: 2, metric: "LeetCode Problems Solved", value: 180, prefix: "~", postfix: "+" },
+  { id: 2, metric: "LeetCode Problems Solved", value: 220, prefix: "~", postfix: "+" },
   { id: 3, metric: "At CodeChef", value: 2, postfix: "⭐" },
 ];
 
