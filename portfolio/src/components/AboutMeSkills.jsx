@@ -140,7 +140,7 @@ const AboutMeSkills = () => {
   return (
     <section
       id="skills"
-      className="text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-12 bg-transperent relative"
+      className="text-white py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-12 bg-transparent relative isolate"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -165,7 +165,7 @@ const AboutMeSkills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-16 sm:mb-16 lg:mb-20 h-[480px] sm:h-[320px] lg:h-[350px] relative"
+          className="mb-8 sm:mb-16 lg:mb-20 min-h-[260px] sm:h-[320px] lg:h-[350px] relative overflow-hidden border-b border-gray-800/30 pb-8"
         >
           <ChromaGrid
             items={skillsData}

@@ -59,7 +59,7 @@ const Home = () => {
       </motion.div>
 
       <motion.div
-        className="container mt-24 mx-auto px-12 py-4"
+        className="container mt-24 mx-auto px-4 sm:px-8 lg:px-12 py-4"
         variants={containerVariants}
       >
         <motion.div variants={sectionVariants}>
