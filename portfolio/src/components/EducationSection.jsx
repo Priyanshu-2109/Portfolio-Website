@@ -6,7 +6,7 @@ const educationData = [
     institution:
       "Charotar University of Science and Technology, Anand, Gujarat",
     duration: "2023 - 2027",
-    grade: "Current CGPA: 9.18 / 10",
+    grade: "Current CGPA: 9.11 / 10",
   },
   {
     title: "Higher Secondary - XII (GSEB)",

@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
         <motion.img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transition-all duration-500 group-hover:scale-95"
+          className="w-full h-full object-contain transition-all duration-500 group-hover:scale-95 p-4"
         />
       </div>
 

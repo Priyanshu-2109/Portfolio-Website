@@ -4,9 +4,12 @@ import jobdekho from "./JobDekhoLogo.png";
 import profile from "./profile.png";
 import logo from "./portfolio_logo.png";
 import portfolio_web from "./portfolio_web.png";
-import visionflow from "./visionflow.avif";
+import visionflow from "./VisionFlow.png";
 import bharti_logo from "./bharti_logo.png";
-import priyanshu from "./priyanshu.jpg"
+import priyanshu from "./priyanshu.jpg";
+import dinedesk from "./DineDesk.png";
+import carepoint from "./CarePoint.png";
+import resumebuilder from "./ResumeBuilder.png";
 
 export const assets = {
   aboutimg,
@@ -16,7 +19,7 @@ export const assets = {
   portfolio_web,
   visionflow,
   bharti_logo,
-  priyanshu
+  priyanshu,
 };
 
 export const projects = [
@@ -35,11 +38,25 @@ export const projects = [
     github: "https://github.com/Priyanshu-2109/JobDekho-Job-Portal-Website",
   },
   {
-    title: "Portfolio Website - Priyanshu Chaniyara",
+    title: "DineDesk - POS System",
     description:
-      "A modern, fully responsive personal portfolio website built with React, Tailwind CSS, and Framer Motion. It includes a fully working contact form for email communication.",
-    image: portfolio_web,
-    github: "https://github.com/Priyanshu-2109/Portfolio-Website",
+      "A comprehensive Point of Sale system for restaurants and cafes. DineDesk streamlines order management, billing, inventory tracking, and payment processing with an intuitive interface for efficient restaurant operations.",
+    image: dinedesk,
+    github: "https://github.com/Priyanshu-2109/DineDesk-POS-System",
+  },
+  {
+    title: "CarePoint - Doctor Appointment System",
+    description:
+      "A full-featured healthcare appointment management platform. CarePoint enables patients to book appointments, view doctor availability, manage medical records, and allows doctors to manage their schedules and patient consultations seamlessly.",
+    image: carepoint,
+    github: "https://github.com/Priyanshu-2109/Doctor-Appointment-System",
+  },
+  {
+    title: "Resume Builder - Full Stack Application",
+    description:
+      "An intuitive resume building platform that helps users create professional resumes with customizable templates. Features include real-time preview, PDF export, multiple design options, and secure cloud storage for saved resumes.",
+    image: resumebuilder,
+    github: "https://github.com/Priyanshu-2109/Resume-Builder-Full-Stack",
   },
   {
     title: "VisionFlow - AI Business Strategist Platform",
@@ -55,7 +72,7 @@ export const experiences = [
     role: "Freelancer",
     company: "Self-Employed",
     duration: "May 2025 - Present",
-    location: "Remote", 
+    location: "Remote",
   },
   {
     role: "Full Stack Development Intern",
