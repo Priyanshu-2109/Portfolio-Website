@@ -10,6 +10,7 @@ import priyanshu from "./priyanshu.jpg";
 import dinedesk from "./DineDesk.png";
 import carepoint from "./CarePoint.png";
 import resumebuilder from "./ResumeBuilder.png";
+import trionic_logo from "./trionic_logo.jpeg";
 
 export const assets = {
   aboutimg,
@@ -80,5 +81,12 @@ export const experiences = [
     duration: "May - June 2025",
     location: "Vadodara, Gujarat",
     logo: bharti_logo,
+  },
+  {
+    role: "Software Development Intern",
+    company: "Trionic Technologies",
+    duration: "Dec 2025 - Present",
+    location: "Remote",
+    logo: trionic_logo,
   },
 ];
