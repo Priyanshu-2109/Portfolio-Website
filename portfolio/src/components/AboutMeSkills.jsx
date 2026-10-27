@@ -18,7 +18,7 @@ const skillsData = [
     gradient: "linear-gradient(145deg, #1572B6, #121212)",
   },
   {
-    image: "https://www.svgrepo.com/show/374118/tailwind.svg",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     title: "Tailwind CSS",
     borderColor: "#06B6D4",
     gradient: "linear-gradient(145deg, #06B6D4, #121212)",
@@ -51,13 +51,6 @@ const skillsData = [
     borderColor: "#FFFFFF",
     gradient: "linear-gradient(145deg, #FFFFFF, #121212)",
   },
-  //   {
-  //     image:
-  //       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
-  //     title: "Framer Motion",
-  //     borderColor: "#0055FF",
-  //     gradient: "linear-gradient(145deg, #0055FF, #121212)",
-  //   },
   {
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
@@ -74,10 +67,17 @@ const skillsData = [
   },
   {
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
-    title: ".NET",
-    borderColor: "#512BD4",
-    gradient: "linear-gradient(145deg, #512BD4, #121212)",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    title: "FastAPI",
+    borderColor: "#009688",
+    gradient: "linear-gradient(145deg, #009688, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
+    title: "Angular",
+    borderColor: "#DD0031",
+    gradient: "linear-gradient(145deg, #DD0031, #121212)",
   },
   {
     image:
@@ -88,31 +88,10 @@ const skillsData = [
   },
   {
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-    title: "C",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #121212)",
-  },
-  {
-    image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
     title: "C++",
     borderColor: "#00599C",
     gradient: "linear-gradient(145deg, #00599C, #121212)",
-  },
-  {
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-    title: "Java",
-    borderColor: "#ED8B00",
-    gradient: "linear-gradient(145deg, #ED8B00, #121212)",
-  },
-  {
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-    title: "C#",
-    borderColor: "#8B5CF6",
-    gradient: "linear-gradient(145deg, #8B5CF6, #121212)",
   },
   {
     image:
@@ -125,6 +104,75 @@ const skillsData = [
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     title: "GitHub",
+    borderColor: "#FFFFFF",
+    gradient: "linear-gradient(145deg, #FFFFFF, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    title: "PostgreSQL",
+    borderColor: "#4169E1",
+    gradient: "linear-gradient(145deg, #4169E1, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+    title: "Prisma ORM",
+    borderColor: "#5A67D8",
+    gradient: "linear-gradient(145deg, #5A67D8, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    title: "Redis",
+    borderColor: "#DC382D",
+    gradient: "linear-gradient(145deg, #DC382D, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    title: "Docker",
+    borderColor: "#2496ED",
+    gradient: "linear-gradient(145deg, #2496ED, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg",
+    title: "Kubernetes",
+    borderColor: "#326CE5",
+    gradient: "linear-gradient(145deg, #326CE5, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    title: "Google Cloud",
+    borderColor: "#4285F4",
+    gradient: "linear-gradient(145deg, #4285F4, #121212)",
+  },
+  {
+    image: "https://cdn.simpleicons.org/googlebigquery/669DF6",
+    title: "BigQuery",
+    borderColor: "#669DF6",
+    gradient: "linear-gradient(145deg, #669DF6, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    title: "Pub/Sub",
+    borderColor: "#4285F4",
+    gradient: "linear-gradient(145deg, #4285F4, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg",
+    title: "GitHub Actions",
+    borderColor: "#2088FF",
+    gradient: "linear-gradient(145deg, #2088FF, #121212)",
+  },
+  {
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+    title: "Vercel",
     borderColor: "#FFFFFF",
     gradient: "linear-gradient(145deg, #FFFFFF, #121212)",
   },
@@ -165,7 +213,7 @@ const AboutMeSkills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-8 sm:mb-16 lg:mb-20 min-h-[260px] sm:h-[320px] lg:h-[350px] relative overflow-hidden border-b border-gray-800/30 pb-8"
+          className="mb-8 sm:mb-16 lg:mb-20 min-h-[420px] sm:h-[460px] lg:h-[350px] relative overflow-hidden border-b border-gray-800/30 pb-8"
         >
           <ChromaGrid
             items={skillsData}

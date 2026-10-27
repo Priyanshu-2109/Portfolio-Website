@@ -123,6 +123,18 @@ const TimelineExperienceCard = ({
                     </svg>
                     {experience.location}
                   </div>
+                  {experience.highlights && (
+                    <ul className="mt-4 space-y-2 text-sm leading-relaxed text-gray-300">
+                      {experience.highlights.map((highlight) => (
+                        <li key={highlight} className="flex gap-2">
+                          <span className="text-blue-400" aria-hidden="true">
+                            -
+                          </span>
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </div>
@@ -224,6 +236,18 @@ const MobileExperienceCard = ({ experience, index }) => {
                   {experience.location}
                 </div>
               </div>
+              {experience.highlights && (
+                <ul className="mt-4 space-y-2 text-sm leading-relaxed text-gray-300">
+                  {experience.highlights.map((highlight) => (
+                    <li key={highlight} className="flex gap-2">
+                      <span className="text-blue-400" aria-hidden="true">
+                        -
+                      </span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>

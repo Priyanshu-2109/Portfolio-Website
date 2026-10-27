@@ -10,16 +10,22 @@ const ProjectCard = ({ project }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative group bg-[#1a1a1a] p-6 rounded-xl shadow-lg overflow-hidden border border-gray-800 flex flex-col items-center justify-center transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-gray-600 w-[450px] max-w-full"
+      className="relative group bg-[#1a1a1a] p-4 sm:p-6 rounded-xl shadow-lg overflow-hidden border border-gray-800 flex flex-col items-center justify-center transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:border-gray-600 w-full max-w-[450px] h-full min-w-0"
       onClick={() => setShowDetails(!showDetails)} // Toggle details on tap for mobile
     >
       {/* Fixed Image Container */}
-      <div className="relative w-full max-w-[400px] h-[250px] flex justify-center items-center bg-white rounded-lg overflow-hidden">
-        <motion.img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-contain transition-all duration-500 group-hover:scale-95 p-4"
-        />
+      <div className="relative w-full h-48 sm:h-56 flex justify-center items-center bg-white rounded-lg overflow-hidden">
+        {project.image ? (
+          <motion.img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-contain transition-all duration-500 group-hover:scale-95 p-4"
+          />
+        ) : (
+          <span className="px-6 text-center text-2xl font-bold text-gray-800">
+            {project.title.split(" - ")[0]}
+          </span>
+        )}
       </div>
 
       {/* Project Title */}

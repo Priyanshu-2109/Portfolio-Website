@@ -10,6 +10,7 @@ export default function CountUp({
   className = "",
   startWhen = true,
   separator = "",
+  decimals = 0,
   onStart,
   onEnd,
 }) {
@@ -64,12 +65,12 @@ export default function CountUp({
       if (ref.current) {
         const options = {
           useGrouping: !!separator,
-          minimumFractionDigits: 0,
-          maximumFractionDigits: 0,
+          minimumFractionDigits: decimals,
+          maximumFractionDigits: decimals,
         };
 
         const formattedNumber = Intl.NumberFormat("en-US", options).format(
-          latest.toFixed(0)
+          Number(latest.toFixed(decimals))
         );
 
         ref.current.textContent = separator
@@ -79,7 +80,7 @@ export default function CountUp({
     });
 
     return () => unsubscribe();
-  }, [springValue, separator]);
+  }, [springValue, separator, decimals]);
 
   return <span className={`${className}`} ref={ref} />;
 }

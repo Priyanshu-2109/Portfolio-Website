@@ -38,19 +38,24 @@ const AboutSection = () => {
             </h1>
             <div className="text-gray-300 text-xs sm:text-sm lg:text-base leading-relaxed space-y-3">
               <p>
-                I'm a dedicated 3rd-year Computer Science student at CHARUSAT
-                with 2+ years of hands-on experience in web development,
-                specializing in the MERN stack, Next.js, and modern JavaScript
-                frameworks. I'm passionate about building scalable full-stack
-                applications and continuously exploring tools to improve
-                performance and development workflows.
+                I'm a Computer Science and Engineering undergraduate at
+                CHARUSAT and a Software Engineering Intern at Motorola
+                Solutions. I build scalable software systems and modern web
+                applications with JavaScript-based frameworks, focusing on
+                responsive interfaces, backend architecture, and cloud
+                technologies.
               </p>
               <p>
-                With a solid foundation in both frontend and backend
-                technologies, I'm currently focused on deepening my expertise in
-                advanced frameworks and real-world problem-solving. I thrive on
-                hands-on learning, turning challenges into opportunities for
-                growth and innovation.
+                I enjoy solving real-world problems, improving application
+                performance, and building clean, user-focused products.
+              </p>
+              <p>
+                Outside work, I contribute to the AWS Cloud Club Web Team, lead
+                innovation and incubation initiatives at E-Cell CHARUSAT, and
+                mentor students through GrowWithGit Club in Git and
+                open-source collaboration. I'm an IBM Full-Stack JavaScript
+                Developer (Coursera) and am working toward the AWS Certified
+                Cloud Practitioner certification.
               </p>
             </div>
           </motion.div>

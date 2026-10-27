@@ -48,7 +48,7 @@ const ProjectSection = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-10 lg:px-20"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch justify-items-center gap-5 sm:gap-8 px-4 sm:px-8 lg:px-12"
       >
         {projects.slice(0, visibleProjects).map((project, index) => (
           <ProjectCard key={index} project={project} />

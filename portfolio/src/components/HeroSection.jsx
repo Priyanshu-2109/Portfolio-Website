@@ -30,13 +30,13 @@ const HeroSection = () => {
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mt-2">
             <TypeAnimation
               sequence={[
-                "Priyanshu",
+                "Priyanshu Chaniyara",
                 1300,
-                "Full Stack Dev",
+                "Software Engineer",
                 1300,
-                "Freelancer",
+                "Full Stack Developer",
                 1300,
-                "CP Enthusiast",
+                "CSE Undergraduate",
                 1300,
               ]}
               wrapper="span"
@@ -47,8 +47,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-[#ADB7BE] text-sm sm:text-lg mt-3 sm:mt-4 leading-relaxed">
-            I am a passionate web developer, dedicated to crafting interactive
-            and efficient web applications.
+            CSE undergraduate and Software Engineering Intern at Motorola
+            Solutions, building scalable software and modern web applications.
           </p>
 
           {/* Buttons */}
@@ -63,7 +63,7 @@ const HeroSection = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/Resume - Priyanshu Chaniyara.pdf"; // Ensure this file is inside the public folder
+                link.href = "/Resume - Priyanshu Chaniyara.pdf";
                 link.download = "Priyanshu Chaniyara - Resume.pdf";
                 document.body.appendChild(link);
                 link.click();

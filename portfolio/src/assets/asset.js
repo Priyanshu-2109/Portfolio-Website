@@ -11,6 +11,7 @@ import dinedesk from "./DineDesk.png";
 import carepoint from "./CarePoint.png";
 import resumebuilder from "./ResumeBuilder.png";
 import trionic_logo from "./trionic_logo.jpeg";
+import motorolaLogo from "./motorola logo.png";
 
 export const assets = {
   aboutimg,
@@ -25,25 +26,30 @@ export const assets = {
 
 export const projects = [
   {
+    title: "ScrapeX - SaaS Workflow Automation Platform",
+    description:
+      "A workflow automation and web-scraping platform with a drag-and-drop workflow builder, scheduled execution, and a scalable pay-as-you-go credit system.",
+  },
+  {
+    title: "DineDesk - Restaurant POS & Table Booking SaaS",
+    description:
+      "A modular restaurant POS and table-booking platform built with the MERN stack, featuring real-time billing, Razorpay payments, invoice emails, and table management.",
+    image: dinedesk,
+    github: "https://github.com/Priyanshu-2109/DineDesk-POS-System",
+  },
+  {
+    title: "JobDekho - Full Stack Job Portal",
+    description:
+      "A full-stack job portal for recruiters and job seekers, with authentication, protected routes, resume uploads, job filtering, application tracking, and recruiter dashboards.",
+    image: jobdekho,
+    github: "https://github.com/Priyanshu-2109/JobDekho-Job-Portal-Website",
+  },
+  {
     title: "EatEasy - Food Ordering Website",
     description:
       "EatEasy features user authentication, cart system, payment processing, and an admin panel for managing orders, food products, and categories.",
     image: eateasy,
     github: "https://github.com/Priyanshu-2109/EatEasy",
-  },
-  {
-    title: "JobDekho - Job Portal Website",
-    description:
-      "JobDekho features search & apply for jobs, track applications, filter by category & location. It also includes Clerk authentication and lets recruiters post jobs and manage applications.",
-    image: jobdekho,
-    github: "https://github.com/Priyanshu-2109/JobDekho-Job-Portal-Website",
-  },
-  {
-    title: "DineDesk - POS System",
-    description:
-      "A comprehensive Point of Sale system for restaurants and cafes. DineDesk streamlines order management, billing, inventory tracking, and payment processing with an intuitive interface for efficient restaurant operations.",
-    image: dinedesk,
-    github: "https://github.com/Priyanshu-2109/DineDesk-POS-System",
   },
   {
     title: "CarePoint - Doctor Appointment System",
@@ -70,23 +76,47 @@ export const projects = [
 
 export const experiences = [
   {
-    role: "Freelancer",
-    company: "Self-Employed",
-    duration: "May 2025 - Present",
-    location: "Remote",
-  },
-  {
-    role: "Full Stack Development Intern",
-    company: "Bharti Soft Tech Pvt Ltd",
-    duration: "May - June 2025",
-    location: "Vadodara, Gujarat",
-    logo: bharti_logo,
+    role: "Software Engineering Intern",
+    company: "Motorola Solutions",
+    duration: "June 2026 - Present",
+    location: "Bangalore, Karnataka (Remote)",
+    logo: motorolaLogo,
+    highlights: [
+      "Developing an internal analytics platform that brings engineering data together to surface adoption and ROI insights.",
+      "Improved an internal portal's frontend performance, reducing page load time by approximately 50%.",
+      "Containerized and deployed frontend and backend services with Docker and Kubernetes; built GitHub Actions CI/CD workflows.",
+    ],
   },
   {
     role: "Software Development Intern",
     company: "Trionic Technologies",
-    duration: "Dec 2025 - Present",
-    location: "Remote",
+    duration: "December 2025 - May 2026",
+    location: "Surat, Gujarat (Remote)",
     logo: trionic_logo,
+    highlights: [
+      "Developed EdTech platform features with Next.js, TypeScript, FastAPI, and modular frontend architecture.",
+      "Built responsive interfaces, reusable components, and API integrations.",
+    ],
+  },
+  {
+    role: "Full Stack Development Intern",
+    company: "Bharti Soft Tech Pvt. Ltd.",
+    duration: "May 2025 - June 2025",
+    location: "Vadodara, Gujarat (Hybrid)",
+    logo: bharti_logo,
+    highlights: [
+      "Built a MERN-stack Resume Builder with JWT authentication and a responsive UI.",
+      "Designed REST APIs, dynamic resume templates, and PDF generation.",
+    ],
+  },
+  {
+    role: "Freelance Full Stack Developer",
+    company: "Self-Employed",
+    duration: "May 2025 - Present",
+    location: "Remote",
+    highlights: [
+      "Developed production-ready SaaS, CRM, and client web applications with authentication, dashboards, and payment integrations.",
+      "Integrated payment gateways across frontend and backend services.",
+    ],
   },
 ];

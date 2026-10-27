@@ -2,9 +2,9 @@ import React from "react";
 import CountUp from "./CountUp";
 
 const achievementsList = [
-  { id: 1, metric: "Projects Completed", value: 10, postfix: "+" },
-  { id: 2, metric: "LeetCode Problems Solved", value: 300, prefix: "~", postfix: "+" },
-  { id: 3, metric: "At CodeChef", value: 2, postfix: "⭐" },
+  { id: 1, metric: "CGPA / 10", value: 9.24, decimals: 2 },
+  { id: 2, metric: "DSA Problems Solved", value: 300, postfix: "+" },
+  { id: 3, metric: "CodeChef Rating", value: 2, postfix: "⭐" },
 ];
 
 const AchievementsSection = () => {
@@ -19,6 +19,7 @@ const AchievementsSection = () => {
                 from={0}
                 to={achievement.value}
                 separator=","
+                decimals={achievement.decimals}
                 duration={1}
                 className="text-white text-3xl sm:text-4xl font-bold"
               />
